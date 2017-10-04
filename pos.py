@@ -24,7 +24,7 @@ def positive_count(A,i,n): # take an Array, location i, and length n
 		return 0 # there's no positive numbers there 
 	if A[i] <= 0: # if the location index value is 0 or less
 		return 0 # it's not a positive number either
-	pos = positive_count(A, left(i), n) + 1 # recur until we cover all values to the left of index, exiting and returning 0 if there's any nonpositive number
+	pos = positive_count(A, left(i), n) + 1 # recur until we've reached the bottom of the heap
 	pos = positive_count(A,	right(i), n) + pos # recur until we tick all values to the right of index, exiting and returning 0 if there's any nonpositive number of if we've reached the end 
 	return pos
 
