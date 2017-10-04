@@ -1,8 +1,8 @@
 1.
 
-a) The height of a binary tree with n elements is log n. 
-b) Lower bounds of a height h tree is log n - h. Upper bounds is h^2
-c) It will exist at height 0, the leaves of the tree. This is because all trees in a max heap are already max heapified, therefore the lowest children have the smallest values below them. 
-d) Yes.
+a) The height of a binary tree with n elements is log_2(n+1). 
+b) The height of a length n heap is log_2 (n+1) ceiling'ed, therefore in terms of h the amount of fewest nodes could be [2^(h-1)] and the max number of nodes [2^h - 1] is the upper bound. 
+c) It will exist at height 0, the leaves of the tree. This is because all trees in a max heap are already max heapified, therefore the lowest children have the smallest values below them. However, we cannot ensure where in that level the min is.
+d) Yes, 'tis a min heap. 
 
 

@@ -1,4 +1,4 @@
-
+# 3
 
 #Nontrivial Base Case:
 	A.length = 3 # [1,2,3] 
